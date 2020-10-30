@@ -7,3 +7,4 @@ var twoSum = function(nums, target) {
         }
     }
 };
+console.log(twoSum([1, 1, 1, 1], 2));
