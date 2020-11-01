@@ -1,9 +1,13 @@
 var reverse = function(x) {
     const xrev = Number(String(Math.abs(x)).split('').reverse().join(''));
-    if (x >= 0){
+    const max = 2147483647;
+    const min = -2147483648;
+    if (xrev > max || min > xrev){
+        return 0;
+    } else if (x >= 0){
         return xrev;
     } else {
         return xrev * -1;
     }
 };
-console.log(reverse(123));
+console.log(reverse(-123));
