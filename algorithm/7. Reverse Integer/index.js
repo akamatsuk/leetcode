@@ -1,10 +1,9 @@
 var reverse = function(x) {
+    const xrev = Number(String(Math.abs(x)).split('').reverse().join(''));
     if (x >= 0){
-        const result = String(x);
-        return result;
+        return xrev;
     } else {
-        const result = String(x);
-        return result;
+        return xrev * -1;
     }
 };
-console.log(reverse(-123));
+console.log(reverse(123));
