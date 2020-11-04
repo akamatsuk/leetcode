@@ -11,6 +11,6 @@ var fizzBuzz = function(n) {
             results.push(new String(i));
         }
     }
-    return results
+    return results;
 };
 console.log(fizzBuzz(15));
