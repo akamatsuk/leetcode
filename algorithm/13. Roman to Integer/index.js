@@ -9,7 +9,7 @@ var romanToInt = function(s) {
     let sum = 0;
     let num = 0;
     let l = Array.length
-    
+
     while (l--){
         const f = Array[l]
         const n = romanSymbol[f]
