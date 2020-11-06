@@ -11,8 +11,13 @@
  * @return {ListNode}
  */
 var mergeTwoLists = function(l1, l2) {
-    const Array = l1.concat(l2);
-    return console.log(Array.sort());
+    let i = 0;
+
+    while (i<l2.length){
+        l1.push(l2[i]);
+        i++
+    }
+    return l1.sort();
 };
 
 console.log(mergeTwoLists([1,2,4],[1,3,4]));
