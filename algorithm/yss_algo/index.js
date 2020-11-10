@@ -23,10 +23,10 @@ var shuffle = function(num) {
         const j = Math.floor(Math.random() * (i + 1));
         [arr[j], arr[i]] = [arr[i], arr[j]]
     }
- 
+
     arr.splice(2, 0, '/');
-    arr.splice(5, 0, '/');
+    arr.push('/');
     return arr.join('');
 };
 
-console.log(shuffle(7777777773610));
+console.log(shuffle(77771234));
