@@ -15,6 +15,7 @@
 
 var shuffle = function(num) {
     const arr = String(num).split('');
+
     while (arr.length > 4) {
         arr.shift();
     }
@@ -22,7 +23,9 @@ var shuffle = function(num) {
         const j = Math.floor(Math.random() * (i + 1));
         [arr[j], arr[i]] = [arr[i], arr[j]]
     }
-
+ 
+    arr.splice(2, 0, '/');
+    arr.splice(5, 0, '/');
     return arr.join('');
 };
 
